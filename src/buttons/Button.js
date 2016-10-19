@@ -37,6 +37,7 @@ const Button = ({
   SelectableBackgroundBorderless,
   Ripple,
   icon,
+  iconImage,
   secondary,
   secondary2,
   secondary3,
@@ -131,6 +132,9 @@ const Button = ({
           icon && !iconRight && iconElement
         }
         {
+          iconImage && !iconRight && iconImage
+        }
+        {
           loading && !loadingRight && loadingElement
         }
         <Text
@@ -150,6 +154,9 @@ const Button = ({
         }
         {
           icon && iconRight && iconElement
+        }
+        {
+          iconImage && iconRight && iconImage
         }
       </View>
     </Component>
